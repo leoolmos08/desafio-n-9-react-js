@@ -10,7 +10,7 @@ const Cart = () =>{
         <>
         <h1>CARRITO DE COMPRAS 🛒</h1>
         <Link to ='/' style={{textDecoration: 'none'}}><Button variant='contained' color='success'>CONTINUAR COMPRANDO</Button></Link>
-        <Button variant="outlined" color="error" onClick={useCtx.clearCartList}>ELIMINAR TODO</Button>
+        <Button variant="outlined" color="error" onClick={()=>useCtx.clearCartList()}>ELIMINAR TODO</Button>
         <Box>
             {
                 (useCtx.cartList.length > 0 ) ?

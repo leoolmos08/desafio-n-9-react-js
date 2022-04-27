@@ -32,7 +32,7 @@ const { createContext, useState } = require("react");
    }
    const subTotal = () =>{
       let totalesItems = cartList.map(item => totalItem(item.itemID));
-      return totalesItems.reduce((previousValue, currentValue) => previousValue + currentValue)
+      return totalesItems.reduce(((previousValue, currentValue) => previousValue + currentValue), 0)
    }
 
    const IVA = () =>{
